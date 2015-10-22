@@ -1,0 +1,31 @@
+﻿<UserControl
+    x:Class="FrenchWordsEveryDay.Views.MemorizeUserControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:FrenchWordsEveryDay.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid x:Name="grLayout">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="70"/>
+            <RowDefinition Height="300"/>
+            <RowDefinition Height="15"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="15"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        
+        <Grid x:Name="grContent" Grid.Row="1" 
+              VerticalAlignment="Center" HorizontalAlignment="Center">
+            <Image x:Name="imgWord" Source="ms-appx:///Assets/BeOriginal.jpg"/>
+        </Grid>
+        <Grid Grid.Row="3">
+            <TextBlock Text="Soit original / Be Original" Foreground="Black" HorizontalAlignment="Center" VerticalAlignment="Center" Height="30"></TextBlock>
+        </Grid>
+        <Grid Grid.Row="5">
+
+        </Grid>
+    </Grid>
+</UserControl>
